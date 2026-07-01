@@ -1,19 +1,22 @@
 # 🛡️ Endpoint Security Assessment Tool
 
-> A Python-based Windows endpoint monitoring application developed for cybersecurity education and authorized security research. The project demonstrates multiple endpoint data collection techniques in a controlled environment using multithreading.
+> A Python-based Windows endpoint security assessment tool developed for cybersecurity education and authorized security research. The application demonstrates multiple endpoint monitoring and system information collection techniques using a multithreaded architecture.
 
-![Python](https://img.shields.io/badge/Python-3.x-blue?logo=python)
-![Platform](https://img.shields.io/badge/Platform-Windows-success)
+![Python](https://img.shields.io/badge/Python-3.12-blue?logo=python&logoColor=white)
+![OS](https://img.shields.io/badge/OS-Windows-0078D6?logo=windows)
+![Cybersecurity](https://img.shields.io/badge/Domain-Cybersecurity-red)
+![Architecture](https://img.shields.io/badge/Architecture-Multithreading-orange)
 ![Status](https://img.shields.io/badge/Status-Completed-brightgreen)
-![License](https://img.shields.io/badge/License-MIT-green)
 
 ---
 
 # 📖 Overview
 
-This project was developed to understand how endpoint monitoring techniques work in Windows environments. It combines multiple system monitoring modules into a single multithreaded Python application to simulate common endpoint data collection methods used during cybersecurity research.
+The **Endpoint Security Assessment Tool** is a Python application designed to demonstrate endpoint monitoring and information gathering techniques in a controlled and authorized environment.
 
-The objective is to help students and security professionals understand endpoint compromise vectors and strengthen defensive security practices by studying attacker methodologies in an authorized environment.
+The project combines multiple system assessment modules—including keyboard event monitoring, clipboard inspection, screenshot capture, webcam image capture, host information collection, and IP-based geolocation—into a single multithreaded application.
+
+This project was built to gain practical experience in endpoint security, understand common attack techniques, and study how defensive solutions such as Endpoint Detection and Response (EDR) systems can identify these behaviors.
 
 ---
 
@@ -21,13 +24,13 @@ The objective is to help students and security professionals understand endpoint
 
 - ⌨️ Keyboard Activity Monitoring
 - 📋 Clipboard Data Collection
-- 📸 Automatic Desktop Screenshot Capture
+- 📸 Desktop Screenshot Capture
 - 📷 Webcam Image Capture
 - 🌍 Public IP & Geolocation Lookup
 - 💻 System Information Collection
-- 📄 JSON-Based System Information Logging
-- 🔒 Thread-Safe Logging Using Mutex Locks
+- 📄 JSON-Based Logging
 - ⚡ Multithreaded Execution
+- 🔒 Thread-Safe Logging
 
 ---
 
@@ -49,56 +52,38 @@ The objective is to help students and security professionals understand endpoint
 # 📂 Project Structure
 
 ```
-Endpoint-Monitor/
+Endpoint Security Assessment Tool/
 │
 ├── main.py
-├── logs.txt
-├── clipboard.txt
-├── system_info.json
-├── screenshot.png
-├── webcam_capture.jpg
-├── requirements.txt
 └── README.md
 ```
 
 ---
 
-# 🏗️ Architecture
+# 🏗️ Working Flow
 
 ```
-                 Start Program
-                       │
-                       ▼
+                 Start Application
+                         │
+                         ▼
           Collect System Information
-                       │
-       ┌───────────────┼───────────────┐
-       │               │               │
-       ▼               ▼               ▼
- Screenshot      Clipboard Log    Webcam Capture
-       │               │               │
-       └───────────────┼───────────────┘
-                       │
-                       ▼
-          Keyboard Listener Starts
-                       │
-                       ▼
-          Store Keys in Memory Buffer
-                       │
-                       ▼
-      Write Logs Every 10 Seconds
+                         │
+       ┌─────────────────┼─────────────────┐
+       │                 │                 │
+       ▼                 ▼                 ▼
+ Screenshot       Clipboard Data      Webcam Capture
+       │                 │                 │
+       └─────────────────┼─────────────────┘
+                         │
+                         ▼
+           Keyboard Listener Starts
+                         │
+                         ▼
+          Store Keystrokes in Buffer
+                         │
+                         ▼
+      Save Logs Every 10 Seconds
 ```
-
----
-
-# 📁 Output Files
-
-| File | Description |
-|------|-------------|
-| logs.txt | Stores keyboard activity |
-| clipboard.txt | Stores clipboard contents |
-| screenshot.png | Captured desktop screenshot |
-| webcam_capture.jpg | Captured webcam image |
-| system_info.json | System information and geolocation |
 
 ---
 
@@ -107,16 +92,16 @@ Endpoint-Monitor/
 Clone the repository
 
 ```bash
-git clone https://github.com/techwithAamir/Advance_keylogger.git
+git clone https://github.com/techwithAamir/Endpoint-Security-Assessment-Tool.git
 ```
 
-Navigate to the project
+Navigate into the project
 
 ```bash
-cd Advance_keylogger
+cd Endpoint-Security-Assessment-Tool
 ```
 
-Install dependencies
+Install the required dependencies
 
 ```bash
 pip install opencv-python pynput pillow pywin32 requests
@@ -133,56 +118,42 @@ python main.py
 # 📚 Skills Demonstrated
 
 - Python Programming
-- Windows API Interaction
+- Cybersecurity Research
 - Endpoint Monitoring
 - Multithreading
 - Thread Synchronization
+- Windows API Interaction
 - Host Enumeration
 - File Handling
 - JSON Processing
 - Defensive Security Concepts
-- Cybersecurity Research
 
 ---
 
 # 🎯 Learning Outcomes
 
-Through this project, I gained practical experience with:
+This project provided hands-on experience with:
 
-- Endpoint monitoring techniques
-- Windows information gathering
-- Keyboard event monitoring
+- Endpoint assessment techniques
+- Windows endpoint monitoring
+- Keyboard event capture
 - Clipboard monitoring
 - Screenshot acquisition
 - Webcam interaction
 - Public IP intelligence
 - Geolocation lookup
-- Concurrent programming using multithreading
-- Thread synchronization using locks
+- Concurrent programming
+- Thread synchronization
 - Secure file handling
 
 ---
 
-# 🔮 Future Improvements
-
-- AES Encrypted Log Storage
-- SQLite Database Integration
-- Configurable Monitoring Modules
-- HTML Report Generation
-- Secure Dashboard
-- Network Connection Monitoring
-- Process Monitoring
-- Cross-Platform Support
-- Improved Error Handling
-- Plugin-Based Architecture
-
----
 
 # ⚠️ Disclaimer
 
-This project was created **solely for educational purposes, cybersecurity research, and authorized security testing**.
+This project was developed **solely for educational purposes, cybersecurity research, and authorized security testing**.
 
-It demonstrates endpoint monitoring techniques to help students and security professionals understand attacker methodologies and improve defensive security controls.
+It demonstrates endpoint monitoring concepts to help students, researchers, and security professionals understand endpoint compromise techniques and strengthen defensive security practices.
 
 **Do not execute this software on any system without explicit authorization.**
 
@@ -194,12 +165,5 @@ The author assumes no responsibility for misuse of this project.
 
 **MD AAMIR**
 
-🎓 B.Tech Computer Science Engineering (AI & ML)
 
-🔐 Cybersecurity • Ethical Hacking • Python • QA Automation
-
-GitHub: https://github.com/techwithAamir
-
----
-
-⭐ If you found this project useful, consider giving it a **Star**!
+⭐ If you found this project useful, consider giving it a **Star**.
