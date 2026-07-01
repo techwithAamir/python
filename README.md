@@ -7,7 +7,7 @@
 ![Status](https://img.shields.io/badge/Status-Completed-brightgreen)
 ![License](https://img.shields.io/badge/License-MIT-green)
 
-
+---
 
 # 📖 Overview
 
@@ -15,7 +15,7 @@ This project was developed to understand how endpoint monitoring techniques work
 
 The objective is to help students and security professionals understand endpoint compromise vectors and strengthen defensive security practices by studying attacker methodologies in an authorized environment.
 
-
+---
 
 # 🚀 Features
 
@@ -29,7 +29,7 @@ The objective is to help students and security professionals understand endpoint
 - 🔒 Thread-Safe Logging Using Mutex Locks
 - ⚡ Multithreaded Execution
 
-
+---
 
 # 🛠️ Technologies Used
 
@@ -44,10 +44,11 @@ The objective is to help students and security professionals understand endpoint
 - Platform
 - JSON
 
+---
 
 # 📂 Project Structure
 
-
+```
 Endpoint-Monitor/
 │
 ├── main.py
@@ -58,11 +59,13 @@ Endpoint-Monitor/
 ├── webcam_capture.jpg
 ├── requirements.txt
 └── README.md
+```
 
+---
 
 # 🏗️ Architecture
 
-
+```
                  Start Program
                        │
                        ▼
@@ -83,7 +86,9 @@ Endpoint-Monitor/
                        │
                        ▼
       Write Logs Every 10 Seconds
+```
 
+---
 
 # 📁 Output Files
 
@@ -176,10 +181,25 @@ Through this project, I gained practical experience with:
 # ⚠️ Disclaimer
 
 This project was created **solely for educational purposes, cybersecurity research, and authorized security testing**.
+
 It demonstrates endpoint monitoring techniques to help students and security professionals understand attacker methodologies and improve defensive security controls.
+
 **Do not execute this software on any system without explicit authorization.**
+
 The author assumes no responsibility for misuse of this project.
 
+---
+
+# 👨‍💻 Author
+
 **MD AAMIR**
+
+🎓 B.Tech Computer Science Engineering (AI & ML)
+
+🔐 Cybersecurity • Ethical Hacking • Python • QA Automation
+
+GitHub: https://github.com/techwithAamir
+
+---
 
 ⭐ If you found this project useful, consider giving it a **Star**!
